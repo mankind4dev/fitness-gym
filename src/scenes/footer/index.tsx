@@ -1,6 +1,6 @@
 import mankind4devBg from "@/assets/mankind4dev-bg.png";
 
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <>
       <footer className="bg-primary-300 py-16">
