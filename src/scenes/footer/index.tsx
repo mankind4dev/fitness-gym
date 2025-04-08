@@ -3,9 +3,9 @@ import mankind4devBg from "@/assets/mankind4dev-bg.png";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-primary-300 py-16">
+      <footer className="bg-primary-300 py-3 sm:py-16">
         <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
-          <div className="mt-16 basis-1/2 md:mt-0">
+          <div className="mt-2 sm:mt-16 basis-1/2 md:mt-0">
             <img src={mankind4devBg} alt="logo" className="w-20 h-10" />
             <p className="my-5">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo

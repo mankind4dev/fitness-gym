@@ -1,4 +1,4 @@
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
+import { Bars3Icon, PlusIcon, XMarkIcon } from "@heroicons/react/16/solid";
 import Links from "./Links";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -71,7 +71,7 @@ const Navbar = ({ isTopPage, selectedPage, setSelectedPage }: Props) => {
                     className="rounded-full bg-secondary-400 p-2 "
                     onClick={() => setIsMenuToggle(!isMenuToggle)}
                   >
-                    <Bars3Icon className="w-6 h-6 text-white" />
+                    {isMenuToggle ? <PlusIcon className="w-6 h-6 rotate-45 text-primary-500" />  : <Bars3Icon className="w-6 h-6 text-white" />}
                   </button>
                 </>
               )}
