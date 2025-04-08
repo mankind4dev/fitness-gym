@@ -2,7 +2,7 @@ import HText from "@/shared/HText";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png"
+import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -152,7 +152,11 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               className="relative mt-16 basis-2/5 md:mt-0"
             >
               <div className="md:before:content-[url('./assets/EvolveText.png')] w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]">
-                <img src={ContactUsPageGraphic} alt="conatct-page-grapgic" className="w-full"/>
+                <img
+                  src={ContactUsPageGraphic}
+                  alt="conatct-page-grapgic"
+                  className="w-full"
+                />
               </div>
             </motion.div>
           </div>
