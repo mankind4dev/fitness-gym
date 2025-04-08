@@ -9,7 +9,7 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-  const inputStyle = `mb5 w-full rounded-lg bg-primary-300 p-3 placeholder-white`;
+  const inputStyle = `mb5 w-full rounded-lg bg-primary-300 p-3 placeholder-white outline-none focus:shadow`;
 
   const {
     register,
@@ -25,7 +25,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   };
   return (
     <>
-      <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
+      <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32 ">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
           className=""
@@ -133,7 +133,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 </div>
                 <button
                   type="submit"
-                  className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition-shadow duration-500 hover:text-white uppercase"
+                  className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 hover:shadow transition-shadow duration-500 hover:text-white uppercase"
                 >
                   Submit
                 </button>
