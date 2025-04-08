@@ -54,7 +54,7 @@ type Props = {
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
     <>
-      <section id="ourclasses" className="w-full bg-primary-300 py40 ">
+      <section id="ourclasses" className="w-full bg-primary-300 pt-10 sm:pt20`">
         <motion.div
           className=""
           onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
