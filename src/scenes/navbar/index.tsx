@@ -26,7 +26,7 @@ const Navbar = ({ isTopPage, selectedPage, setSelectedPage }: Props) => {
             <div className={`${flexBetween} w-full gap-16`}>
               {/* {Left side} */}
               <img
-                src="/public/mankind4dev-bg.png"
+                src="/mankind4dev-bg.png"
                 alt="logo"
                 className="w-[90px] h-[60px]"
               />
