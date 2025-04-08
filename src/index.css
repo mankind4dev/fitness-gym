@@ -1,0 +1,63 @@
+@import "tailwindcss";
+/* @import "tailwindcss/base"; */
+/* @import "tailwindcss/components"; */
+@import "tailwindcss/utilities";
+
+@theme {
+  --breakpoint-sx: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1060px;
+  --color-gray-20: #f8f4eb;
+  --color-gray-50: #efe6e6;
+  --color-gray-100: #dfcccc;
+  --color-gray-500: #5e0000;
+  --color-primary-300: #ffe1e0;
+  --color-primary-500: #ff6b66;
+  --color-secondary-400: #ffcd58;
+  --color-secondary-500: #ffc132;
+  --color-secondary-500: #ffc1E2;
+}
+
+.gradient-yellowRed {
+  background-image: linear-gradient(180deg, #ff616a 20%, #ff53 50%, #ffc837 100%);
+}
+
+.mobile-home {
+  background-image: url("./assets/HomePageGraphic.png");
+}
+
+.font-dmSans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.evolvetext {
+  background-image: url("./assets/EvolveText.png");
+}
+
+.abstractwaves {
+  background-image: url("./assets/AbstractWaves.png");
+}
+
+.sparkles {
+  background-image: url("./assets/Sparkles.png");
+}
+
+.circles {
+  background-image: url("./assets/Circles.png");
+}
+.gradientYellow {
+  background: linear-gradient(90deg, #ff616a 0%, #ffc837 100%);
+}
+
+@layer utilities {
+  .card {
+    @apply bg-gray-500 rounded-2xl border w-3/4 h-3/4 p-4;
+  } 
+  .flexBetween{
+    @apply flex items-center justify-center
+  }
+}
